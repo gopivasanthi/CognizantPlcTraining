@@ -19,6 +19,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BasicContent", "BasicConten
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CognizantPlc.Feature.BasicContent", "src\Feature\BasicContent\website\CognizantPlc.Feature.BasicContent.csproj", "{315E0A79-95DD-4F7F-9D36-011D5A7E7F57}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Navigation", "Navigation", "{98795D94-762C-4FFF-AE3F-C9F34ADFAB33}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CognizantPlc.Feature.Navigation", "src\Feature\Navigation\website\CognizantPlc.Feature.Navigation.csproj", "{1A01EA6D-8C0A-4B3F-B1EA-CB17B72CD9E2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,10 @@ Global
 		{315E0A79-95DD-4F7F-9D36-011D5A7E7F57}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{315E0A79-95DD-4F7F-9D36-011D5A7E7F57}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{315E0A79-95DD-4F7F-9D36-011D5A7E7F57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A01EA6D-8C0A-4B3F-B1EA-CB17B72CD9E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A01EA6D-8C0A-4B3F-B1EA-CB17B72CD9E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A01EA6D-8C0A-4B3F-B1EA-CB17B72CD9E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A01EA6D-8C0A-4B3F-B1EA-CB17B72CD9E2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -42,6 +50,8 @@ Global
 		{AAD5FB0C-1354-4C54-A82A-01BF4AC4439C} = {33B474F1-04BD-4011-AE51-CDEC775EBC44}
 		{57640A6C-F3D6-458C-A4BA-DE41BFA7790E} = {B1372930-6F67-4A58-B38E-4A904CB5392A}
 		{315E0A79-95DD-4F7F-9D36-011D5A7E7F57} = {57640A6C-F3D6-458C-A4BA-DE41BFA7790E}
+		{98795D94-762C-4FFF-AE3F-C9F34ADFAB33} = {B1372930-6F67-4A58-B38E-4A904CB5392A}
+		{1A01EA6D-8C0A-4B3F-B1EA-CB17B72CD9E2} = {98795D94-762C-4FFF-AE3F-C9F34ADFAB33}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {820A2CBF-EB83-4AB4-9D63-E9971E030A32}
