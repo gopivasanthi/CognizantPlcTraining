@@ -1,6 +1,7 @@
 ﻿using CognizantPlc.Feature.BasicContent.Models;
 using Sitecore.Data.Fields;
 using Sitecore.Data.Items;
+using Sitecore.Links;
 using Sitecore.Resources.Media;
 using System;
 using System.Collections.Generic;
@@ -25,16 +26,15 @@ namespace CognizantPlc.Feature.BasicContent.Controllers
                                                {
                                                    CarouselTitle = x?.Fields["PageHeroTitle"]?.Value ?? "[Hero Title Missing]",
                                                    CarouselDescription = x?.Fields["PageHeroDescription"]?.Value ?? "[Hero Description Missing]",
-                                                   CarouselImage = GetImage(x, "PageHeroImage")
+                                                   CarouselImage = GetImage(x, "PageHeroImage"),
+                                                   CarouselItemUrl = LinkManager.GetItemUrl(x)
                                                });
-
+                    return View(childCarouselItems);
                 }
                 else
                 {
                     return View("EmptyCarousel");
                 }
-                
-                return View();
             }
             else
             {
@@ -51,7 +51,7 @@ namespace CognizantPlc.Feature.BasicContent.Controllers
                 {
                     CarouselImage carouselImage = new CarouselImage
                     {
-                        ImageUrl = MediaManager.GetMediaUrl(imageField.MediaItem),
+                        ImageUrl = imageField.MediaItem == null ? string.Empty : MediaManager.GetMediaUrl(imageField.MediaItem),
                         ImageAlt = imageField.Alt ?? "[Alt Missing]",
                     };
                     return carouselImage;
